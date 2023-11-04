@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  background: hsl(160, 100%, 50%);
+  width: 100%;
+  /* filter: blur(50%); */
+}
+/* -----------------------------------nav bar-------------------------- */
+nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  padding: 2px 5%;
+  justify-content: space-between;
+  justify-items: start;
+  align-items: center;
+  border: solid black 2px;
+  background: hsla(156, 2%, 40%, 0.8);
+  backdrop-filter: blur(15px);
+
+  overflow: hidden;
+  z-index: 999999;
+}
+nav img {
+  width: 50px;
+  padding-top: 3px;
+  align-content: start;
+}
+.nav_links {
+  flex: 1;
+  text-align: right;
+  margin-left: 20%;
+}
+.nav_links ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 7px;
+  position: relative;
+}
+.nav_links ul li a {
+  text-decoration: none;
+  color: rgb(248, 241, 241);
+  cursor: pointer;
+}
+.nav_links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #14c38e;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
+}
+.nav_links ul li a:hover {
+  color: rgb(236, 241, 237);
+}
+.nav_links ul li:hover::after {
+  width: 100%;
+  color: blueviolet;
+}
+
+/* -----------------------------home page------------------------ */
+#home {
+  height: 70vh;
+  /* width: 100%; */
+  display: flex;
+  padding: 10%;
+  background: hsl(160, 100%, 50%);
+  border: dashed black 2px;
+  justify-content: space-around;
+  position: relative;
+  /* color: #e3fcbf; */
+}
+
+.home_text {
+  display: block;
+  margin: 1%;
+  /* border: dashed #0a0a0a 1px; */
+}
+.cname {
+  display: block;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 5em;
+}
+.phrase {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 100px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  width: 50%;
+}
+.loc {
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: -50px;
+}
+.loc i {
+  color: red;
+  size: 40px;
+}
+
+.cimg img {
+  width: 250px;
+}
+/* -----------------------------Service page------------------------ */
+#service {
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  padding: 10%;
+  background: #b8f1b0;
+  border: dashed black 2px;
+  justify-content: space-around;
+}
+/* -----------------------------review page------------------------ */
+
+#reviews {
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  padding: 10%;
+  background: #e3fcbf;
+  border: dashed black 2px;
+  justify-content: space-around;
+}
+/* -----------------------------contact page------------------------ */
+#contact {
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  padding: 10%;
+  color: #14c38e;
+  border: dashed black 2px;
+  justify-content: space-around;
+}
