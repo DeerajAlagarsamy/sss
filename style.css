@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: hsl(160, 100%, 50%);
+  background: hsl(230, 58%, 8%);
   width: 100%;
   /* filter: blur(50%); */
 }
@@ -71,7 +71,9 @@ nav img {
   /* width: 100%; */
   display: flex;
   padding: 10%;
-  background: hsl(160, 100%, 50%);
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("carwimg/WNR-Home-Hero.jpg");
+  background-position: center;
   border: dashed black 2px;
   justify-content: space-around;
   position: relative;
@@ -79,8 +81,11 @@ nav img {
 }
 
 .home_text {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1%;
+  color: antiquewhite;
   /* border: dashed #0a0a0a 1px; */
 }
 .cname {
@@ -94,25 +99,28 @@ nav img {
   display: block;
   padding: 10px;
   margin-top: 10px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   font-family: "Times New Roman", Times, serif;
-  font-size: medium;
+  font-size: large;
   width: 50%;
 }
 .loc {
   display: flex;
   padding: 10px;
   margin-top: 20px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   width: 40%;
   font-family: Arial, Helvetica, sans-serif;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  column-gap: -50px;
+  column-gap: 7px;
 }
 .loc i {
   color: red;
-  size: 40px;
+}
+.loc p {
+  display: block;
+  margin-top: 5px;
 }
 
 .cimg img {
