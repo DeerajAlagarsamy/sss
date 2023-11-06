@@ -89,7 +89,7 @@ nav img {
   align-items: center;
   margin: 1%;
   color: antiquewhite;
-  text-shadow: 3px 1px 3px black;
+  text-shadow: 1px 1px 3px black;
   /* border: dashed #0a0a0a 1px; */
 }
 .cname {
@@ -184,7 +184,7 @@ nav img {
   scale: 1.2;
   color: #f44336;
   /* background-color: white; */
-  box-shadow: 0 0 10px 3px #f44336;
+  box-shadow: 0 0 1px 2px #f44336;
 
   /* box-shadow: 0 3px 3px 0 #f44336, 0 3px 3px 0 #f44336; */
 }
@@ -223,11 +223,68 @@ nav img {
 #reviews {
   height: 100vh;
   /* width: 100%; */
+  color: white;
+  padding-top: 5%;
+  background: rgb(1, 1, 51);
+
+  text-align: center;
+}
+.inner {
+  overflow: hidden;
+  padding: 5px;
+}
+.inner h1 {
+  font-size: 2em;
+}
+.border {
+  display: none;
+  width: 150px;
+  height: 5px;
+  background: #14c38e;
+  margin: 26px auto;
+}
+.row {
   display: flex;
-  padding: 10%;
-  background: #e3fcbf;
-  border: dashed black 2px;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.rev {
+  background: whitesmoke;
+  color: rgb(1, 1, 51);
+  padding: 30px;
+  border-radius: 20px;
+}
+.rev i {
+  color: goldenrod;
+}
+#reviews img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 2px rgb(1, 1, 51);
+}
+.name {
+  font-size: medium;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.stars {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 /* -----------------------------contact page------------------------ */
 #contact {
