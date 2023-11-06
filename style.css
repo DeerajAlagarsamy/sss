@@ -7,25 +7,26 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: hsl(230, 58%, 8%);
+  background: #ffc436;
   width: 100%;
   /* filter: blur(50%); */
 }
 /* -----------------------------------nav bar-------------------------- */
 nav {
-  position: sticky;
+  position: relative;
   top: 0px;
   display: flex;
-  padding: 2px 5%;
+  /* width: 100vw; */
+  padding: 2% 5%;
   justify-content: space-between;
   justify-items: start;
   align-items: center;
-  border: solid black 2px;
-  background: hsla(156, 2%, 40%, 0.8);
-  backdrop-filter: blur(15px);
+  /* border: solid black 2px; */
+  background: none;
+  /* backdrop-filter: blur(15px); */
 
-  overflow: hidden;
-  z-index: 999999;
+  /* overflow: hidden; */
+  /* z-index: 999999; */
 }
 nav img {
   width: 50px;
@@ -36,48 +37,50 @@ nav img {
   flex: 1;
   text-align: right;
   margin-left: 20%;
+  /* gap: 5px; */
 }
 .nav_links ul li {
   display: inline-block;
   list-style: none;
-  padding-right: 7px;
+  padding-right: 17px;
   position: relative;
 }
 .nav_links ul li a {
   text-decoration: none;
-  color: rgb(248, 241, 241);
+  font-size: 17px;
+  color: #fdfdfd;
   cursor: pointer;
 }
 .nav_links ul li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: #14c38e;
+  background: #f44336;
   display: block;
   margin: auto;
+
   transition: 0.2s;
 }
-.nav_links ul li a:hover {
-  color: rgb(236, 241, 237);
-}
+/* .nav_links ul li a:hover {
+  color: rgb(13, 13, 14);
+} */
 .nav_links ul li:hover::after {
   width: 100%;
-  color: blueviolet;
+  text-shadow: 20px 20px black;
+
+  /* color: rgb(132, 5, 250); */
 }
 
 /* -----------------------------home page------------------------ */
 #home {
-  height: 70vh;
-  /* width: 100%; */
-  display: flex;
-  padding: 10%;
-  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  height: 100vh;
+
+  background: radial-gradient(rgba(4, 9, 30, 0.7), rgba(23, 41, 110, 0.7)),
     url("carwimg/WNR-Home-Hero.jpg");
   background-position: center;
   border: dashed black 2px;
-  justify-content: space-around;
+
   position: relative;
-  /* color: #e3fcbf; */
 }
 
 .home_text {
@@ -86,14 +89,15 @@ nav img {
   align-items: center;
   margin: 1%;
   color: antiquewhite;
+  text-shadow: 3px 1px 3px black;
   /* border: dashed #0a0a0a 1px; */
 }
 .cname {
   display: block;
-  padding: 10px;
+  margin-top: 5%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bolder;
-  font-size: 5em;
+  font-size: 6em;
 }
 .phrase {
   display: block;
@@ -101,7 +105,8 @@ nav img {
   margin-top: 10px;
   /* margin-left: 100px; */
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: x-large;
+  text-align: center;
   width: 50%;
 }
 .loc {
@@ -128,14 +133,91 @@ nav img {
 }
 /* -----------------------------Service page------------------------ */
 #service {
-  height: 100vh;
+  height: 90vh;
   /* width: 100%; */
-  display: flex;
-  padding: 10%;
-  background: #b8f1b0;
+  display: block;
+  padding: 5%;
+  background: #f4f5f4;
   border: dashed black 2px;
-  justify-content: space-around;
+  /* align-content: center; */
 }
+.sheader {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: x-large;
+  color: rgb(1, 1, 51);
+  /* border: solid 2px#f44336; */
+}
+.service_flex {
+  display: flex;
+  margin: 10%;
+  justify-content: space-around;
+  align-content: center;
+}
+.service_items {
+  display: block;
+  width: 20vw;
+  height: 25vh;
+  /* background-image: url("carwimg/istockphoto-1394573624-612x612.webp"); */
+  border-radius: 5px;
+  background-size: cover;
+
+  background-color: rgb(1, 1, 51);
+  color: white;
+  font-size: 3em;
+  padding-top: 9%;
+  text-align: center;
+  transition: 0.2s;
+}
+/* .service_items::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
+  color: transparent;
+} */
+.service_items:hover {
+  scale: 1.2;
+  color: #f44336;
+  /* background-color: white; */
+  box-shadow: 0 0 10px 3px #f44336;
+
+  /* box-shadow: 0 3px 3px 0 #f44336, 0 3px 3px 0 #f44336; */
+}
+
+/* .service_items:hover::after {
+  width: 100%;
+  color: black;
+  
+} */
+/* #bw {
+  background: url("carwimg/1d2b0ff0299f002052e78f9037b409b4-583636479.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.price_bttn {
+  display: flex;
+  justify-content: center;
+}
+#pricebttn {
+  display: block;
+  width: 13%;
+  height: 6vh;
+  font-size: medium;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(1, 1, 51);
+}
+#pricebttn:hover {
+  border: 1px solid rgb(1, 1, 51);
+  background: #f44336;
+  transition: 0.4s;
+}
+
 /* -----------------------------review page------------------------ */
 
 #reviews {
