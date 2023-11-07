@@ -8,10 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <!-- <script defer src="jquery.counterup.min.js"></script> -->
     <title>Batman</title>
   </head>
   <body>
@@ -63,6 +63,8 @@
         <div class="sheader">
           <h1>Services we provide</h1>
         </div>
+        <div class="border"></div>
+        
         <div class="service_flex">
           <div class="service_items" id="bw">Body Wash</div>
           <div class="service_items" id="fw">Full Wash</div>
@@ -73,11 +75,24 @@
           <button type="button" id="pricebttn">View Price list</button>
         </div>
       </section>
-      <!-- /* -----------------------------services page------------------------ */ -->
+      <!-- /* -----------------------------reviews page------------------------ */ -->
       <section id="reviews">
         <div class="inner">
           <h1>Reviews</h1>
           <div class="border"></div>
+          <div class="counters">
+            <div class="counter1">
+              <p class="count reveal">40<span class="spa" ><i class="fa fa-plus" aria-hidden="true"></i></span></p> 
+            
+              <p>Years of service</p>
+            </div>
+            <div class="counter1">
+            <p class="count reveal" >10000</p>
+              <!-- <span class="spa"><i class="fa fa-plus" aria-hidden="true"></i></span> -->
+              <p>Happy Customers</p>
+            </div>
+
+          </div>
           <div class="row">
             <div class="col">
               <div class="rev">
@@ -148,5 +163,18 @@
       <!-- /* -----------------------------services page------------------------ */ -->
       <section id="contact">adfsd</section>
     </main>
+    <!-- script-------------------------------------- -->
+    <script src="jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    
+  
+    <script>jQuery(document).ready(function($)
+      {
+        $('.count').counterUp({
+          delay:10,
+          time:1000
+        });
+      });
+      </script>
   </body>
 </html>
