@@ -67,21 +67,40 @@
         <div class="border"></div>
         
         <div class="service_flex">
-          <button  type="button" class="service_items" id="bw">Body Wash</button>
+          <button  data-modal-target="#bdwhmodal" type="button" class="service_items" id="bw">Body Wash</button>
           <button  type="button" class="service_items" id="fw">Full Wash</but>
 
           <button  type="button"  class="service_items" id="foamw">Foam Wash</div>
         </div>
+<div class="bdwh modal" id="bdwhmodal">
+    <div class="pflex2">
+    <h3 class="pricetitle">Services includes:</h3>
+    <button data-close-button class="priceclose"><i class="fa fa-times " aria-hidden="true" id="xclose"></i></button>
+    </div>
+    
+    <div class="modalflex">
+      <div id="modalimg1"><img src="carwimg/1d2b0ff0299f002052e78f9037b409b4-583636479.png"></div>
+      <div class="modallist" id="modallistid1">Outer body wash with high-grade detergent</div>
+      <div><img src="carwimg/interior.png"/></div>
+      <div class="modallist">Interior vaccuum and cleaning</div>
+      <div id="modalimg2"><img src="carwimg/wheelclean.png"/></div>
+
+      <div class="modallist" id="modallistid3">Washing the wheels</div>
+    </div>
+
+    
+</div>
+
         <div class="price_bttn">
           <button data-modal-target="#pricelistmodal" type="button" id="pricebttn">View Price list</button>
         </div>
-        <div class="price_list" id="pricelistmodal">
+        <div class="price_list modal " id="pricelistmodal">
           <div class="pflex">
           <h3 class="pricetitle">Price list</h3>
           <button data-close-button class="priceclose"><i class="fa fa-times " aria-hidden="true" id="xclose"></i></button>
           </div>
-          <div class="pricelist">
-          <table class="tbtb">
+          <div class="pricelist ">
+          <table class="tbtb ">
             <tr id="tbhead">
             <td>Vehicle type</td>
             <td>Body wash (₹)</td>

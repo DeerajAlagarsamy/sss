@@ -133,7 +133,7 @@ nav img {
 }
 /* -----------------------------Service page------------------------ */
 #service {
-  height: 90vh;
+  height: 190vh;
   /* width: 100%; */
   display: block;
   padding: 3%;
@@ -201,7 +201,64 @@ nav img {
   background-size: cover;
   background-repeat: no-repeat;
 } */
-
+.bdwh {
+  border: solid 2px black;
+  background: white;
+  border-radius: 15px;
+  padding: 2%;
+  position: fixed;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  width: 50%;
+  z-index: 10;
+}
+.bdwh.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.pflex2 {
+  display: flex;
+  padding-bottom: 3%;
+  width: auto;
+  /* border: solid 2px #14c38e; */
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px black;
+}
+.pricetitle {
+  padding-left: 5%;
+}
+.modalflex {
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  column-gap: 10%;
+}
+/* .modalflex img:first-child {
+  margin-left: 10%;
+} */
+.modalflex img {
+  display: block;
+}
+#modalimg1 {
+  margin-left: 16%;
+}
+#modalimg2 {
+  margin-left: 17%;
+}
+.modallist {
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+}
+#modallistid1 {
+  margin-left: 5%;
+}
+#modallistid3 {
+  margin-left: 20%;
+}
 .price_bttn {
   display: flex;
   justify-content: center;
@@ -229,7 +286,7 @@ nav img {
   border-radius: 15px;
   padding-bottom: 2%;
   position: fixed;
-  top: 60%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
@@ -254,7 +311,7 @@ nav img {
   align-self: flex-start;
   margin-top: 2%;
 }
-.pflex #xclose {
+#xclose {
   align-self: flex-end;
   padding-right: 2%;
   cursor: pointer;
@@ -285,7 +342,7 @@ nav img {
   /* border: solid 29x black; */
 }
 .tbtb td {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   /* background: #fdfdfd; */
 }
