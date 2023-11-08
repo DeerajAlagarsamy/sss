@@ -11,6 +11,7 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script defer src="script.js"></script>
     <!-- <script defer src="jquery.counterup.min.js"></script> -->
     <title>Batman</title>
   </head>
@@ -72,122 +73,129 @@
           <button  type="button"  class="service_items" id="foamw">Foam Wash</div>
         </div>
         <div class="price_bttn">
-          <button type="button" id="pricebttn">View Price list</button>
+          <button data-modal-target="#pricelistmodal" type="button" id="pricebttn">View Price list</button>
         </div>
-        <div class="pricelist">
-          <table>
-            <tr>
+        <div class="price_list" id="pricelistmodal">
+          <div class="pflex">
+          <h3 class="pricetitle">Price list</h3>
+          <button data-close-button class="priceclose"><i class="fa fa-times " aria-hidden="true" id="xclose"></i></button>
+          </div>
+          <div class="pricelist">
+          <table class="tbtb">
+            <tr id="tbhead">
             <td>Vehicle type</td>
-            <td>Body wash</td>
-            <td>Full body wash</td>
-            <td>Foam wash</td>
+            <td>Body wash (₹)</td>
+            <td>Full body wash (₹)</td>
+            <td>Foam wash (₹)</td>
           </tr>
           <tr>
-            <td>Micro</td>
-            <td>270</td>
-            <td>460</td>
+            <td class="vtype">Micro</td>
+            <td class="sprice">270</td>
+            <td class="sprice">460</td>
 
-            <td>500</td>
-
-          </tr>
-          <tr>
-            <td>Sedan</td>
-            <td>300</td>
-            <td>500</td>
-
-            <td>550</td>
+            <td class="sprice">500</td>
 
           </tr>
           <tr>
-            <td>CUV</td>
-            <td>300</td>
-            <td>500</td>
+            <td class="vtype" >Sedan</td>
+            <td class="sprice">300</td>
+            <td class="sprice">500</td>
 
-            <td>550</td>
-
-          </tr>
-          <tr>
-            <td>SUV</td>
-            <td>350</td>
-            <td>550</td>
-
-            <td>600</td>
+            <td class="sprice">550</td>
 
           </tr>
           <tr>
-            <td>Hatchback</td>
-            <td>350</td>
-            <td>550</td>
+            <td class="vtype">CUV</td>
+            <td class="sprice">300</td>
+            <td class="sprice">500</td>
 
-            <td>600</td>
-
-          </tr>
-          <tr>
-            <td>Pickup</td>
-            <td>350</td>
-            <td>550</td>
-
-            <td>600</td>
+            <td class="sprice">550</td>
 
           </tr>
           <tr>
-            <td>Van</td>
-            <td>400</td>
-            <td>600</td>
+            <td class="vtype">SUV</td>
+            <td class="sprice">350</td>
+            <td class="sprice">550</td>
 
-            <td>650</td>
-
-          </tr>
-          <tr>
-            <td>Mini Truck</td>
-            <td>350</td>
-            <td>550</td>
-
-            <td>600</td>
+            <td class="sprice">600</td>
 
           </tr>
           <tr>
-            <td>Mini Van</td>
-            <td>350</td>
-            <td>550</td>
+            <td class="vtype">Hatchback</td>
+            <td class="sprice">350</td>
+            <td class="sprice">550</td>
 
-            <td>600</td>
-
-          </tr>
-          <tr>
-            <td>Truck</td>
-            <td>400</td>
-            <td>600</td>
-
-            <td>650</td>
+            <td class="sprice">600</td>
 
           </tr>
           <tr>
-            <td>Auto Rickshaw</td>
-            <td>300</td>
-            <td>400</td>
+            <td class="vtype">Pickup</td>
+            <td class="sprice">350</td>
+            <td class="sprice">550</td>
 
-            <td>450</td>
-
-          </tr>
-          <tr>
-            <td>Small Bikes</td>
-            <td>110</td>
-            <td>200</td>
-
-            <td>250</td>
+            <td class="sprice">600</td>
 
           </tr>
           <tr>
-            <td>Big Bikes</td>
-            <td>150</td>
-            <td>220</td>
+            <td class="vtype">Van</td>
+            <td class="sprice">400</td>
+            <td class="sprice">600</td>
 
-            <td>300</td>
+            <td class="sprice">650</td>
+
+          </tr>
+          <tr>
+            <td class="vtype">Mini Truck</td>
+            <td class="sprice">350</td>
+            <td class="sprice">550</td>
+
+            <td class="sprice">600</td>
+
+          </tr>
+          <tr>
+            <td class="vtype">Mini Van</td>
+            <td class="sprice">350</td>
+            <td class="sprice">550</td>
+
+            <td class="sprice">600</td>
+
+          </tr>
+          <tr>
+            <td class="vtype">Truck</td>
+            <td class="sprice">400</td>
+            <td class="sprice">600</td>
+
+            <td class="sprice">650</td>
+
+          </tr>
+          <tr>
+            <td class="vtype">Auto Rickshaw</td>
+            <td class="sprice">300</td>
+            <td class="sprice">400</td>
+
+            <td class="sprice">450</td>
+
+          </tr>
+          <tr>
+            <td class="vtype">Small Bikes</td>
+            <td class="sprice">110</td>
+            <td class="sprice">200</td>
+
+            <td class="sprice">250</td>
+
+          </tr>
+          <tr>
+            <td class="vtype">Big Bikes</td>
+            <td class="sprice">150</td>
+            <td class="sprice">220</td>
+
+            <td class="sprice">300</td>
 
           </tr>
           </table>
         </div>
+      </div>
+      <div   id="overlay"></div>
       </section>
       <!-- /* -----------------------------reviews page------------------------ */ -->
       <section id="reviews">
